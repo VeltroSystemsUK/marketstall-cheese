@@ -1,26 +1,26 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Merriweather, Open_Sans } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { BasketProvider } from "@/contexts/BasketContext";
 import config from "@/site.config";
 import "./globals.css";
 
-const inter = Inter({
+const merriweather = Merriweather({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair-display",
+  variable: "--font-merriweather",
   display: "swap",
   style: ["normal", "italic"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "700"],
 });
 
-const title = `${config.brand.name} — ${config.brand.location} Farmers Market`;
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
+const title = `${config.brand.name} — ${config.brand.location}`;
 
 export const metadata: Metadata = {
   title: {
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   },
   description: config.brand.description,
   keywords: [
-    "farmers market",
+    "artisan cheese",
+    "cheesemonger",
     config.brand.location,
-    "local food",
-    "organic produce",
-    "artisan",
-    "farm to table",
+    "British cheese",
+    "cheese board",
+    "farmhouse cheese",
   ],
   authors: [{ name: "Veltro Ltd" }],
   creator: "Veltro Ltd",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: config.brand.description,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+        url: "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=1200&q=80",
         width: 1200,
         height: 630,
         alt: title,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#2d6a4f",
+  themeColor: "#3e7241",
   width: "device-width",
   initialScale: 1,
 };
@@ -73,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable}`}>
+    <html lang="en" className={`${merriweather.variable} ${openSans.variable}`}>
       <body>
         <AuthProvider>
           <BasketProvider>
@@ -82,13 +82,13 @@ export default function RootLayout({
               position="bottom-center"
               toastOptions={{
                 style: {
-                  background: "#1e4d38",
+                  background: "#284d2b",
                   color: "#fff",
                   borderRadius: "10px",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-open-sans)",
                 },
                 success: {
-                  iconTheme: { primary: "#e8a838", secondary: "#fff" },
+                  iconTheme: { primary: "#ea9220", secondary: "#fff" },
                 },
               }}
             />

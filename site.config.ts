@@ -1,40 +1,34 @@
-/**
- * site.config.ts — edit this file when deploying for a new client.
- *
- * MODE GUIDE
- * ----------
- * marketplace   Multi-producer platform. Full admin, producer onboarding,
- *               Stripe Connect commission splits. Sell to farmers market
- *               organisers, collectives, or aggregators.
- *
- * single-store  One brand, one producer's products. Direct Stripe checkout
- *               (no commission). Sell to individual farms, bakeries, etc.
- */
-
 import type { SiteConfig } from "@/lib/site-config.types";
 
 const config: SiteConfig = {
-  mode: "marketplace",
+  mode: "single-store",
 
   brand: {
-    name: "MarketStall",
-    tagline: "Your local market, delivered",
+    name: "The Walled Garden Cheese",
+    tagline: "Handpicked artisan cheeses from British farmhouses and caves",
     description:
-      "Connecting East Midlands farmers and artisan producers directly with people who love great food. Every order supports a local family.",
-    email: "hello@marketstall.co.uk",
-    location: "East Midlands",
-    foundedYear: 2024,
-    socialInstagram: "https://instagram.com",
-    socialFacebook: "https://facebook.com",
+      "We source directly from small-scale British cheesemakers — rare clothbound cheddars, cave-aged blues, and seasonal soft cheeses you won't find in any supermarket. Delivered in temperature-controlled packaging, perfectly conditioned.",
+    email: "hello@walledgardencheese.co.uk",
+    location: "Matlock, Derbyshire",
+    foundedYear: 2015,
+    socialInstagram: "https://instagram.com/walledgardencheese",
+    socialFacebook: "https://facebook.com/walledgardencheese",
   },
 
   features: {
-    producerOnboarding: true,
-    adminPanel: true,
-    multiProducer: true,
-    stripeConnect: true,
+    producerOnboarding: false,
+    adminPanel: false,
+    multiProducer: false,
+    stripeConnect: false,
     reviews: true,
   },
+
+  stats: [
+    { value: "60+", label: "Cheese Varieties" },
+    { value: "30+", label: "UK Producers" },
+    { value: "4.9★", label: "Average Rating" },
+    { value: "Est. 2015", label: "Derbyshire" },
+  ],
 };
 
 export default config;
