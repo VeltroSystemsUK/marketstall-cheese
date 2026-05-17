@@ -50,7 +50,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "200g cut from the wheel",
     stock: 30,
     images: [
-      "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=800&q=80",
+      "/images/cheddar.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -73,7 +73,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "200g cut from the truckle",
     stock: 25,
     images: [
-      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&q=80",
+      "/images/stilton.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -96,7 +96,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "5 cheeses (serves 6–8)",
     stock: 20,
     images: [
-      "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=800&q=80",
+      "/images/cheese-board.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -119,7 +119,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "whole 250g round",
     stock: 15,
     images: [
-      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&q=80",
+      "/images/tunworth.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -142,7 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "200g",
     stock: 28,
     images: [
-      "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=800&q=80",
+      "/images/cheddar.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -164,7 +164,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "200g",
     stock: 35,
     images: [
-      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&q=80",
+      "/images/stilton.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -186,7 +186,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "3 cheeses + 2 chutneys",
     stock: 18,
     images: [
-      "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=800&q=80",
+      "/images/cheese-board.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
@@ -208,7 +208,7 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: "200g",
     stock: 22,
     images: [
-      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&q=80",
+      "/images/tunworth.jpg",
     ],
     dietary: ["gluten-free", "vegetarian"],
     allergens: ["dairy"],
