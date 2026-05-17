@@ -19,9 +19,8 @@ export const MOCK_PRODUCERS: Producer[] = [
     },
     categories: ["cheese", "accompaniments"],
     images: {
-      banner:
-        "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=1400&q=80",
-      logo: "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=200&q=80",
+      banner: "/images/hero.jpg",
+      logo: "/images/cheddar.jpg",
     },
     status: "approved",
     commissionRate: 0,
@@ -269,8 +268,7 @@ export const MOCK_ORDERS: Order[] = [
         price: 3800,
         quantity: 1,
         unit: "5 cheeses (serves 6–8)",
-        imageUrl:
-          "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400&q=80",
+        imageUrl: "/images/hero.jpg",
       },
       {
         productId: "prod-1",
@@ -280,8 +278,7 @@ export const MOCK_ORDERS: Order[] = [
         price: 800,
         quantity: 1,
         unit: "200g cut from the wheel",
-        imageUrl:
-          "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400&q=80",
+        imageUrl: "/images/hero.jpg",
       },
     ],
     producerIds: ["producer-1"],
