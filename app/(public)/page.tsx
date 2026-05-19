@@ -66,7 +66,11 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <section
+        className="relative flex min-h-screen items-center justify-center overflow-hidden"
+        data-demo-img="hero"
+        data-demo-img-label="Hero background"
+      >
         <Image
           src="/images/hero.jpg"
           alt="Artisan cheese board with a selection of British farmhouse cheeses"
@@ -132,10 +136,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex items-end justify-between">
             <div>
-              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-harvest-600">
+              <p
+                data-demo-edit="products-eyebrow"
+                className="mb-2 text-sm font-semibold uppercase tracking-widest text-harvest-600">
                 Cut fresh from the wheel
               </p>
-              <h2 className="font-display text-4xl font-bold text-gray-900">
+              <h2
+              data-demo-edit="products-heading"
+              className="font-display text-4xl font-bold text-gray-900">
                 Our finest selections
               </h2>
             </div>
@@ -149,7 +157,7 @@ export default function HomePage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {FEATURED_PRODUCTS.map((product, i) => (
               <div key={product.id} data-reveal data-reveal-delay={i * 80}>
-                <ProductCard product={product} />
+                <ProductCard product={product} demoKey={`product-${i}`} />
               </div>
             ))}
           </div>
@@ -199,7 +207,9 @@ export default function HomePage() {
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-harvest-500">
                   Our story
                 </p>
-                <h2 className="font-display mb-6 text-4xl font-bold text-white sm:text-5xl">
+                <h2
+                  data-demo-edit="story-heading"
+                  className="font-display mb-6 text-4xl font-bold text-white sm:text-5xl">
                   The cheeses supermarkets will never stock.
                 </h2>
                 <p className="mb-4 text-base leading-relaxed text-forest-300">
@@ -215,7 +225,9 @@ export default function HomePage() {
                   Meet the cheesemonger <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
-              <div className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
+              <div data-demo-img="story"
+                data-demo-img-label="Story photo"
+                className="relative h-80 overflow-hidden rounded-3xl lg:h-[480px]">
                 <Image
                   src="/images/hero.jpg"
                   alt="A selection of artisan cheeses on a slate board"
@@ -269,10 +281,14 @@ export default function HomePage() {
                 <Thermometer className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-1-title"
+                  className="font-semibold text-gray-900">
                   Temperature-controlled delivery
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-1-body"
+                  className="text-sm text-gray-500">
                   Every order is packed in insulated boxes with ice packs.
                   Cheese arrives at the correct temperature every time.
                 </p>
@@ -283,10 +299,14 @@ export default function HomePage() {
                 <RefreshCw className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-2-title"
+                  className="font-semibold text-gray-900">
                   Tasted before dispatch
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-2-body"
+                  className="text-sm text-gray-500">
                   We taste every cheese at maturity before it leaves us. If
                   it&apos;s not right, we don&apos;t send it — we replace it and
                   wait.
@@ -298,10 +318,14 @@ export default function HomePage() {
                 <Truck className="h-6 w-6 text-forest-700" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900">
+                <h4
+                  data-demo-edit="trust-3-title"
+                  className="font-semibold text-gray-900">
                   Next-day UK delivery
                 </h4>
-                <p className="text-sm text-gray-500">
+                <p
+                  data-demo-edit="trust-3-body"
+                  className="text-sm text-gray-500">
                   Order before 12 noon for next-day delivery. Dispatched
                   Tuesday, Wednesday, and Thursday to ensure freshness on
                   arrival.
@@ -367,7 +391,9 @@ export default function HomePage() {
             className="font-display mb-4 text-4xl font-bold text-white sm:text-5xl">
             Life is too short for mediocre cheese.
           </h2>
-          <p className="mb-8 text-lg text-forest-300">
+          <p
+            data-demo-edit="cta-body"
+            className="mb-8 text-lg text-forest-300">
             Rare, handpicked, perfectly conditioned. Join over 3,500 customers
             who&apos;ve discovered what cheese is really capable of.
           </p>
